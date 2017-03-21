@@ -139,13 +139,13 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
+                        <li>Menu</li>
+                        <li>Tags</li>
                         
-                        <li>友情链接</li>
+                        <li>Friends</li>
                         
                         
-                        <li>关于我</li>
+                        <li>About Me</li>
                         
                     </ul>
                 </div>
@@ -184,7 +184,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/demo/">demo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hello/">hello</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/demo/">demo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hello/">hello</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/自建博客/">自建博客</a></li></ul>
                     </div>
                 </section>
                 
@@ -259,7 +259,7 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
       <div class="body-wrap">
   
@@ -267,7 +267,7 @@
   
     <div class="article-meta">
       <a href="/2017/03/21/Hexo-Github/" class="article-date">
-      <time datetime="2017-03-21T08:22:10.000Z" itemprop="datePublished">2017-03-21</time>
+      <time datetime="2017-03-21T12:19:42.000Z" itemprop="datePublished">2017-03-21</time>
 </a>
 
 
@@ -282,7 +282,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/21/Hexo-Github/">Hexo+Github</a>
+      <a class="article-title" href="/2017/03/21/Hexo-Github/">Hexo&amp;Github</a>
     </h1>
   
 
@@ -292,202 +292,30 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>#参考博客<br><a href="http://www.mway.top/2016/10/17/hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E8%AF%A6%E7%BB%86%E6%AD%A5%E9%AA%A4/#" target="_blank" rel="external">郭文奇的个人博客</a></p>
-<p><a href="http://kchen.cc/2016/11/12/hexo-instructions/" target="_blank" rel="external">基于 Hexo 的全自动博客构建部署系统</a></p>
-<p>#一、准备环境</p>
-<h2 id="必备环境"><a href="#必备环境" class="headerlink" title="必备环境"></a>必备环境</h2><h6 id="博客框架：hexo"><a href="#博客框架：hexo" class="headerlink" title="博客框架：hexo"></a>博客框架：hexo</h6><pre><code>Hexo is a fast, simple &amp; powerful blog framework.
-</code></pre><blockquote>
-<p><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>是一个极速、简单且强大的静态博客架构。它使用 Node.js 作为构建引擎，上百个文件在几秒钟内便可构建完成；而且拥有着丰富的插件库，因开源而显得生机勃勃，可扩展性很好；最重要的，它支持<a href="http://kchen.cc/2015/10/05/Markdown-Manual/#Markdown-简明语法" target="_blank" rel="external">Markdown</a> 作为书写语言，极大地方便了博客的撰写</p>
-</blockquote>
-<h6 id="版本控制工具：git"><a href="#版本控制工具：git" class="headerlink" title="版本控制工具：git"></a>版本控制工具：git</h6><h6 id="博客托管平台：github"><a href="#博客托管平台：github" class="headerlink" title="博客托管平台：github"></a>博客托管平台：github</h6><h2 id="可选环境"><a href="#可选环境" class="headerlink" title="可选环境"></a>可选环境</h2><h6 id="文本编辑器：sublime、vim、atom、notepad"><a href="#文本编辑器：sublime、vim、atom、notepad" class="headerlink" title="文本编辑器：sublime、vim、atom、notepad++"></a>文本编辑器：sublime、vim、atom、notepad++</h6><h6 id="命令行工具-控制台-：cmder-win下-、git-全平台-、bash-linux下"><a href="#命令行工具-控制台-：cmder-win下-、git-全平台-、bash-linux下" class="headerlink" title="命令行工具(控制台)：cmder(win下)、git(全平台)、bash(linux下)"></a>命令行工具(控制台)：cmder(win下)、git(全平台)、bash(linux下)</h6><pre><code>注意：在win下cmder比git的效率高
-</code></pre><blockquote>
-<p>关于cmder的介绍和使用请详见：<a href="">Cmder详解</a></p>
-</blockquote>
-<p>#二、环境搭建</p>
-<p>##1. 本地仓库(blog)的搭建</p>
-<p>###1.1 git的下载与配置</p>
-<p>#####1. 下载</p>
-<blockquote>
-<p>官网下载:<a href="https://git-scm.com/downloads" target="_blank" rel="external">git download</a>–&gt;国内直接从官网下载比较困难，有时需要翻墙</p>
-<p>国内下载：<a href="https://github.com/waylau/git-for-win" target="_blank" rel="external">git for win</a></p>
-<p>#####2. 安装与使用<br><a href="https://git-scm.com/book/zh/v2" target="_blank" rel="external">参考官方说明文档</a></p>
-<p><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/" target="_blank" rel="external">参考廖雪峰的博客</a></p>
-<p><a href="http://pan.baidu.com/s/1bpzQBV5" target="_blank" rel="external">参考相关pdf文档</a></p>
-<p>#####3. 配置–创建本地仓库</p>
-<h6 id="新建仓库"><a href="#新建仓库" class="headerlink" title="新建仓库"></a>新建仓库</h6></blockquote>
-<pre><code>在本地新建一个文件夹作为放置博客文件的仓库（名字和地方可以自由选择，当然最好不要放在中文路径下）。如：E:\anony
-</code></pre><h6 id="初始化仓库"><a href="#初始化仓库" class="headerlink" title="初始化仓库"></a>初始化仓库</h6><pre><code>进入E:\anony，点击鼠标右键，选择Git Bash here
-</code></pre><p><img src="img/images/1.png" alt=""></p>
-<pre><code>在命令提示符$后面输入命令：git init;初始化仓库
-</code></pre><p><img src="img/images/2.png" alt=""></p>
-<pre><code>这时Git就把仓库建好了，而且告诉你是一个空的仓库（empty Git repository），可以发现当前目录下（即新建的本地仓库E:\anony）多了一个.git的文件夹，这个目录是Git来跟踪管理版本库的，没事千万不要手动修改这个目录里面的文件，否则就把Git仓库给破坏了。如果你没有看到.git文件夹，那是因为这个目录默认是隐藏的，用ls -ah命令就可以看见隐藏的.git文件夹
-</code></pre><p><img src="img/images/3.png" alt=""></p>
-<p>###1.2 hexo的安装与配置</p>
-<p>#####1. 下载并安装node.js</p>
-<pre><code>node.js是Hexo 的构建引擎，所以安装hexo之前需要安装node.js
-</code></pre><blockquote>
-<p>官网下载：<a href="https://nodejs.org/en/" target="_blank" rel="external">node.js</a>;在win上直接按照步骤安装（一直默认即可）。安装后可以使用命令：node -v进行查看是否安装成功</p>
-</blockquote>
-<p><img src="img/images/4.png" alt=""></p>
-<p><img src="img/images/33.png" alt=""></p>
-<p>#####2. 下载安装hexo</p>
-<pre><code>由于官方并没有提供下载安装包，所有需要通过控制台(命令行工具)键入hexo命令进行下载安装
-</code></pre><p>######2.1 使用git下载安装</p>
-<pre><code>在E:\anony目录下鼠标右键，选择Git Bash here
-</code></pre><p><img src="img/images/1.png" alt=""></p>
-<pre><code>输入命令：npm install -g hexo-cli
-</code></pre><p><img src="img/images/9.png" alt=""></p>
-<pre><code>查看hexo版本：hexo --version。验证是否安装成功
-</code></pre><p><img src="img/images/10.png" alt=""></p>
-<pre><code>查看hexo命令的帮助文档：hexo
-</code></pre><p><img src="img/images/11.png" alt=""></p>
-<p>######2.2 使用cmder下载安装</p>
-<pre><code>在E:\anony目录下鼠标右键，选择Cmder Here
-</code></pre><p><img src="img/images/5.png" alt=""></p>
-<pre><code>输入命令：npm install -g hexo-cli
-</code></pre><p><img src="img/images/6.png" alt=""></p>
-<pre><code>查看hexo版本：hexo --version。验证是否安装成功
-</code></pre><p><img src="img/images/7.png" alt=""></p>
-<pre><code>查看hexo命令的帮助文档：hexo
-</code></pre><p><img src="img/images/8.png" alt=""></p>
-<p>#####3. hexo配置–生成博客框架</p>
-<pre><code>注意：在之后提到的根目录就是hexo init命令后面指定的目录（此处是blog目录）
-</code></pre><h6 id="使用cmder（git效率较低）"><a href="#使用cmder（git效率较低）" class="headerlink" title="使用cmder（git效率较低）"></a>使用cmder（git效率较低）</h6><pre><code>在E:\anony目录下鼠标右键，选择Cmder Here
-</code></pre><p><img src="img/images/5.png" alt=""></p>
-<pre><code>输入命令：hexo init blog。初始化完成后会提示：INFO  Start blogging with Hexo!。此时可以在根目录(E:\anony)下生成了一个blog文件夹，它是用来存放建立博客网站所需要的所有文件
-</code></pre><p><img src="img/images/12.png" alt=""></p>
-<pre><code>cd到根目录(blog目录)下，在输入命令：npm install---安装依赖包
-</code></pre><p><img src="img/images/13.png" alt=""></p>
-<p>###1.3 访问本地仓库</p>
-<pre><code>由于git的执行效率较低，所以下面使用cmder控制台进行演示
-</code></pre><p>#####1. 生成博客</p>
-<pre><code>在根目录目录下鼠标右键，选择Cmder Here(或者直接使用cd命令进行切换)，输入命令：hexo generate/hexo g.该命令会将source目录下的md文档根据配置文件生成博客网站内容
-</code></pre><p><img src="img/images/14.png" alt=""></p>
-<p>#####2. 启动本地服务器</p>
-<pre><code>根目录下输入命令：hexo server/hexo s
-</code></pre><p><img src="img/images/15.png" alt=""></p>
-<p>#####3. 访问本地仓库(博客)</p>
-<pre><code>用浏览器访问http://localhost:4000/，此时，可以看到一个漂亮的博客首页，当然这个博客只是在本地的，别人是看不到的，hexo3.0使用的默认主题是landscape。（这是hexo的本地预览功能）
-</code></pre><p><img src="img/images/16.png" alt=""></p>
-<p>##2. 上传本地仓库(blog)到github</p>
-<pre><code>通过 hexo server 搭建在本地的一个临时服务器，只有自己通过 http://localhost:4000 才能访问到，如果想要把自己的博客发布的互联网上，需要利用一个服务器来部署你的博客。
-</code></pre><p>###2.1 github账号的注册与配置</p>
-<blockquote>
-<p>详细的github教程请见：<a href="">github教程</a></p>
-</blockquote>
-<p>#####1. 注册github账号</p>
-<blockquote>
-<p>登录<a href="https://github.com/" target="_blank" rel="external">github官网</a>（有时需要翻墙）<br>如果你已经有账号，那么点击右上角的sign in直接登录。<br>如果没有账号，依次输入昵称、邮箱、密码，然后点击Sign up for GitHub进行注册，按照默认的设置完成注册，最后还要进行邮件确认,我们登录到自己的注册邮箱中，会有一个github发来的邮件，点击即可。</p>
-</blockquote>
-<p><img src="img/images/17.png" alt=""></p>
-<p>#####2. 建立远程仓库(repository)</p>
-<blockquote>
-<p>登录第一步注册的github账号，点击Start a project，在Repository name下输入仓库名，记住仓库名必须是：username.github.io（username与注册的github账号名必须一致），其他的保持默认即可，然后点击Create repository，到这里，你在github上的的一个仓库就已经建立成功。</p>
-</blockquote>
-<p><img src="img/images/18.png" alt=""><br><img src="img/images/19.png" alt=""></p>
-<p>###2.2 git的配置<br>     配置git名称和邮箱(与github的用户名和邮箱是一致的)<br><img src="img/images/20.png" alt=""><br><img src="img/images/21.png" alt=""></p>
-<p>###2.3 hexo的配置<br>    编辑_config.yml文件： 编辑E：\anony\blog下的_config.yml文件（建议使用Notepad++或者sublime）。在_config.yml文件的最下方，添加如下配置：<br><img src="img/images/22.png" alt=""></p>
-<pre><code>注意：username替换为你github的账号名称，注意：hexo的配置文件中任何”:”后面都是带一个空格的，否则会报错
-</code></pre><p><img src="img/images/23.png" alt=""></p>
-<p>###2.4 配置ssh key</p>
-<blockquote>
-<p>此处可以参考<a href="https://help.github.com/articles/generating-an-ssh-key/" target="_blank" rel="external">Github官方文档</a>配置ssh key</p>
-</blockquote>
-<p>#####1. 在根目录下鼠标右键，选择Cmder Here(或者直接使用cd命令进行切换)，输入命令一下命令</p>
-<pre><code>ssh-keygen -t rsa -C &quot;Github的注册邮箱地址&quot;
-</code></pre><p>#####2. 之后会要求确认路径和输入密码，我们这里使用默认的设置，一路回车就行，如果命令执行成功，会在C:\Users\Administrator目录下生成一个.ssh的文件夹（在打印信息中有提示）<br><img src="img/images/24.png" alt=""></p>
-<p>#####3. 进入.ssh文件夹，使用文本编辑器(sublime/notepad++)打开id_rsa.pub文件，复制全部内容（即生成的key）。</p>
-<pre><code>注意：千万不要使用Windows自带的记事本编辑任何文本文件。原因是Microsoft开发记事本的团队使用了一个非常弱智的行为来保存UTF-8编码的文件，他们自作聪明地在每个文件开头添加了0xefbbbf（十六进制）的字符，你会遇到很多不可思议的问题，比如，网页第一行可能会显示一个“?”，明明正确的程序一编译就报语法错误，等等，都是由记事本的弱智行为带来的。建议你下载Notepad++或者sublime代替记事本，不但功能强大，而且免费！Notepad++使用时需要将默认编码设置为UTF-8 without BOM
-</code></pre><p><img src="img/images/25.png" alt=""></p>
-<p>#####4. 登录github账号，然后在页面右下角的Your repositories目录下，打开创建的仓库（username.github.io） ，点击右上角的settings，左边选中SSH and GPG keys，右边选择New SSH key，Title可随便填写，Key：粘贴上面复制的key（即id_rsa.pub文件的全部内容），然后点击Add SSH key。<br><img src="img/images/26.png" alt=""><br><img src="img/images/27.png" alt=""></p>
-<p>#####5. 之后会收到一封github官网发来的验证邮件，打开邮件链接进行确认即可。</p>
-<p>#####6. 为了验证是否成功，输入一下命令</p>
-<pre><code>ssh -T git@github.com
-</code></pre><p><img src="img/images/28.png" alt=""></p>
-<pre><code>如果是第一次，会提示是否continue，输入yes就会看到：You’ve successfully username, but GitHub does not provide shell access （username会显示为你的账号名称）这就表示已成功连上github
-</code></pre><p>###2.5 上传本地仓库</p>
-<p>#####1. 安装hexo-deployer-git 插件</p>
-<pre><code>根据官方的文档显示，现在 Hexo 支持 Git、Heroku、Rsync、OpenShift、FTPSync 等部署方式，我们选择 Git 来部署的话，需要首先安装 hexo-deployer-git 插件
-在根目录下输入命令：npm install hexo-deployer-git --save
-</code></pre><p><img src="img/images/29.png" alt=""></p>
-<p>#####2. 在根目录下依次输入下列命令</p>
-<pre><code>hexo generate(g)
-hexo deploy(d)
-
-以上命令可以简写成：hexo g -d
-</code></pre><p><img src="img/images/30.png" alt=""></p>
-<p><img src="img/images/31.png" alt=""></p>
-<p>#####3. 如果上传成功，会显示INFO Deploy done: git，到此，就大功告成了，在浏览器中输入username.github.io（username替换为github的仓库名），就可以看到自己的博客了。<br><img src="img/images/32.png" alt=""></p>
-<p>#三、优化配置</p>
-<p>##1. 撰写博文</p>
-<p>###1.1 本地创建</p>
-<p>#####1. 生成博文源文件<br>    hexo new<br><img src="img/images/34.png" alt=""></p>
-<h6 id="新建待提交博文–在根目录下输入下列命令"><a href="#新建待提交博文–在根目录下输入下列命令" class="headerlink" title="新建待提交博文–在根目录下输入下列命令"></a>新建待提交博文–在根目录下输入下列命令</h6><pre><code>hexo new post &quot;filename&quot;
-</code></pre><p><img src="img/images/35.png" alt=""></p>
-<h6 id="新建草稿博文—-在根目录下输入下列命令"><a href="#新建草稿博文—-在根目录下输入下列命令" class="headerlink" title="新建草稿博文—-在根目录下输入下列命令"></a>新建草稿博文—-在根目录下输入下列命令</h6><pre><code>hexo new draft &quot;filename&quot;
-</code></pre><p><img src="img/images/36.png" alt=""></p>
-<p>#####2. 编辑博文源文件</p>
-<p>######使用markdownpad打开博文源文件<br><img src="img/images/37.png" alt=""></p>
-<blockquote>
-<p>这是 post 模板自动帮我生成的 yaml 文件头。其中 title 是博文的标题，我们可以改成「你好！」；tags 是博文的标签，我们可以加上「demo」、「hello」两个标签，从第 7 行开始我们就可以撰写博客的正文了。假设我写好的博客如下：</p>
-</blockquote>
-<p><img src="img/images/40.png" alt=""></p>
-<p>#####3. 编辑配置文件<br>    编辑_config.yml文件： 编辑E：\anony\blog下的_config.yml文件（建议使用Notepad++或者sublime）<br><img src="img/images/38.png" alt=""></p>
-<p>#####4. 本地预览<br>    在根目录下一次输入下列命令</p>
-<pre><code>    &gt;&gt;hexo g
-    &gt;&gt;hexo s
-
-然后用浏览器访问http://localhost:4000/
-</code></pre><p><img src="img/images/41.png" alt=""></p>
-<p>###1.2 上传部署</p>
-<h6 id="在根目录下键入下列命令"><a href="#在根目录下键入下列命令" class="headerlink" title="在根目录下键入下列命令"></a>在根目录下键入下列命令</h6><pre><code>hexo g -d
-</code></pre><p>##2. 个性化配置</p>
-<p>######前面我们已经了解了Hexo 的安装使用和如何部署自己的博客到 Github，现在我们来自定义一下我们博客。配置文件有两个：</p>
-<pre><code>&gt;&gt;根目录的_config.yml：配置网站整体信息
-&gt;&gt;themes目录下各主题中的_config.yml：配置网站主题信息
-</code></pre><p>###2.1 根目录的_config.yml</p>
-<pre><code>使用sublime打开_config.yml
-</code></pre><p>#####1.<br><img src="img/images/42.png" alt=""></p>
-<blockquote>
-<p>这一组配置是博客的描述，title 和 subtitle 分别是博客的站名，和副标题，description 对搜索引擎收录博客会有帮助。language 一般可以选配 en 或者 zh-cn，分别是英文和简体中文。</p>
-<p>#####2.<br><img src="img/images/43.png" alt=""><br>这个部分需要修改的只有 url 选项，如果想绑定自己购买的域名则将url改成自己的域名，否则就不需要改动此部分</p>
-<p>#####3.<br><img src="img/images/44.png" alt=""><br>这一组配置是用来定义主题和配置插件的，可以看到，官方默认的主题叫做 landscape，就是天际地平线的主题。<a href="https://hexo.io/themes/" target="_blank" rel="external">Hexo主题社区</a>和<a href="https://hexo.io/plugins/" target="_blank" rel="external">Hexo插件社区</a>非常非常的活跃，官方列表已经收录了 84 个制作精美的主题（字母升序排列，热度不分先后），每个主题都有很大的差别和不一样的特性，大家可以自行去列表中浏览、预览、选择自己喜欢的主题，总有一款适合你的胃口（没有就自己改😄）。例如，我现在选择 yelee 主题：</p>
-</blockquote>
-<p>######3.1 下载</p>
-<blockquote>
-<p>1.<a href="https://hexo.io/themes/" target="_blank" rel="external">官网搜索主题</a></p>
-</blockquote>
-<p><img src="img/images/45.png" alt=""></p>
-<blockquote>
-<p>鼠标放在yelee上，右键，点击复制链接</p>
-</blockquote>
-<p><img src="img/images/46.png" alt=""></p>
-<blockquote>
-<p>翻墙下载或者git下载,在根目录下打开git bash或者cmder，输入一下命令</p>
-</blockquote>
-<pre><code>git clone https://github.com/MOxFIVE/hexo-theme-yelee.git themes/yelee
-</code></pre><p>######3.2 安装</p>
-<pre><code>将下载好的主题文件夹放到themes/下相应目录中
-</code></pre><p>######3.3 修改配置</p>
-<pre><code>将配置文件中的theme选项值改为：yelee
-</code></pre><p><img src="img/images/47.png" alt=""></p>
-<p>######3.4 主题更新</p>
-<pre><code>cd themes/yelee
-git pull
-</code></pre><p>######3.5 保存后，我们再次执行 hexo server 命令，预览一下网站的变化<br><img src="img/images/48.png" alt=""></p>
-<blockquote>
-<p>此时主题已经发生了巨大的改变，网站左侧现在显示的是 author 和 sutitle 了，右边的预览页面支持很多动态特效。每一个主题的详细配置参数都在 /themes/yelee/_config.yml 文件下，可以查阅该主题的官方页了解配置的解释。当你选定了自己喜欢的主题，修改、配置好了之后。便可以使用、撰写、发布自己的博客了。</p>
-</blockquote>
-<p>###2.1themes目录下各主题中的_config.yml–自定义主题</p>
-
+              <p>本博文只是记录了自己在win上使用Hexo&amp;Github建站的过程。详细的各平台hexo建站教程可以参考<a href="https://hexo.io/zh-cn/docs/index.html">Hexo官方全平台建站文档</a></p>
+<ul>
+<li></li></ul>
+          
       
     </div>
     
     <div class="article-info article-info-index">
       
       
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/自建博客/">自建博客</a><a class="article-category-link" href="/categories/自建博客/静态/">静态</a><a class="article-category-link" href="/categories/自建博客/静态/hexo/">hexo</a>
+    </div>
+
 
       
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/自建博客/">自建博客</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2017/03/21/Hexo-Github/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -534,11 +362,9 @@ git pull
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>欢迎来到 <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>！这是你的第一篇博文。</p>
-<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="创建一篇新博文"><a href="#创建一篇新博文" class="headerlink" title="创建一篇新博文"></a>创建一篇新博文</h3><pre><code>$ hexo new post &quot;My New Post&quot;
-</code></pre><p>更多信息……</p>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>谢谢你使用 Hexo。</p>
-
+              <ul>
+<li>
+          
       
     </div>
     
@@ -551,6 +377,10 @@ git pull
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/demo/">demo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hello/">hello</a></li></ul>
     </div>
 
+      
+        <p class="article-more-link">
+          <a href="/2017/03/21/hello/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -597,16 +427,9 @@ git pull
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
+              <ul>
+<li>
+          
       
     </div>
     
@@ -615,6 +438,10 @@ git pull
       
 
       
+      
+        <p class="article-more-link">
+          <a href="/2017/03/21/hello-world/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -642,14 +469,14 @@ git pull
                 2016-2017 jack golden
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="Site Visitors"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
                 
@@ -658,7 +485,7 @@ git pull
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        <span id="page-visit"  title="Page Hits"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 
@@ -679,7 +506,7 @@ git pull
                 $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
             }
             else {
-                var backgroundnum = 5;
+                var backgroundnum = 7;
                 var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
                 $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
             }
@@ -691,9 +518,9 @@ git pull
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="Comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
 </div>
 <script>
     // Open in New Window
