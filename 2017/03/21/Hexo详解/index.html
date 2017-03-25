@@ -113,10 +113,18 @@
 
 
 
+<meta name="description" content="Hexo=hexo生成器(hexo n)+hexo解析器(hexo g)+hexo部署器(hexo d)。它的工作机制是：
+
+
+hexo生成器根据scaffolds目录下的draft.md、page.md、post.md模板文件分别在source/_draft/、source/、source/_post目录下生成对应的filename.md文件和以filename命名的文件夹(该文件夹是通过编辑">
 <meta property="og:type" content="article">
 <meta property="og:title" content="静态站点生成框架之Hexo详解">
 <meta property="og:url" content="http://yoursite.com/2017/03/21/Hexo详解/index.html">
 <meta property="og:site_name" content="HappyAnony的博客">
+<meta property="og:description" content="Hexo=hexo生成器(hexo n)+hexo解析器(hexo g)+hexo部署器(hexo d)。它的工作机制是：
+
+
+hexo生成器根据scaffolds目录下的draft.md、page.md、post.md模板文件分别在source/_draft/、source/、source/_post目录下生成对应的filename.md文件和以filename命名的文件夹(该文件夹是通过编辑">
 <meta property="og:image" content="http://yoursite.com/9.png">
 <meta property="og:image" content="http://yoursite.com/10.png">
 <meta property="og:image" content="http://yoursite.com/11.png">
@@ -165,6 +173,10 @@
 <meta property="og:updated_time" content="2017-03-24T04:27:56.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="静态站点生成框架之Hexo详解">
+<meta name="twitter:description" content="Hexo=hexo生成器(hexo n)+hexo解析器(hexo g)+hexo部署器(hexo d)。它的工作机制是：
+
+
+hexo生成器根据scaffolds目录下的draft.md、page.md、post.md模板文件分别在source/_draft/、source/、source/_post目录下生成对应的filename.md文件和以filename命名的文件夹(该文件夹是通过编辑">
 <meta name="twitter:image" content="http://yoursite.com/9.png">
 
 
@@ -178,8 +190,8 @@
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: '6400974526938613000',
-      author: 'Anony'
+      userId: 'undefined',
+      author: '博主'
     },
     algolia: {
       applicationID: '',
@@ -296,6 +308,16 @@
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/commonweal/index.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益
           </a>
         </li>
       
@@ -421,8 +443,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/自建博客/" itemprop="url" rel="index">
-                    <span itemprop="name">自建博客</span>
+                  <a href="/categories/1-Coder社区-RedArmy/" itemprop="url" rel="index">
+                    <span itemprop="name">1-Coder社区(RedArmy)</span>
                   </a>
                 </span>
 
@@ -432,8 +454,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/自建博客/2-静态/" itemprop="url" rel="index">
-                    <span itemprop="name">2.静态</span>
+                  <a href="/categories/1-Coder社区-RedArmy/2-虚实奇正/" itemprop="url" rel="index">
+                    <span itemprop="name">2-虚实奇正</span>
                   </a>
                 </span>
 
@@ -443,8 +465,30 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/自建博客/2-静态/1-环境准备/" itemprop="url" rel="index">
-                    <span itemprop="name">1.环境准备</span>
+                  <a href="/categories/1-Coder社区-RedArmy/2-虚实奇正/1-自建博客/" itemprop="url" rel="index">
+                    <span itemprop="name">1-自建博客</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/1-Coder社区-RedArmy/2-虚实奇正/1-自建博客/2-静态/" itemprop="url" rel="index">
+                    <span itemprop="name">2-静态</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/1-Coder社区-RedArmy/2-虚实奇正/1-自建博客/2-静态/1-环境准备/" itemprop="url" rel="index">
+                    <span itemprop="name">1-环境准备</span>
                   </a>
                 </span>
 
@@ -478,7 +522,15 @@
       
 
       
-        <ul>
+        <blockquote>
+<p><strong>Hexo=hexo生成器(hexo n)+hexo解析器(hexo g)+hexo部署器(hexo d)。它的工作机制是：</strong></p>
+</blockquote>
+<ol>
+<li>hexo生成器根据<code>scaffolds</code>目录下的<code>draft.md</code>、<code>page.md</code>、<code>post.md</code>模板文件分别在<code>source/_draft/</code>、<code>source/</code>、<code>source/_post</code>目录下生成对应的<code>filename.md</code>文件和以<code>filename</code>命名的文件夹(该文件夹是通过编辑<code>站点配置文件</code>中的<code>post_asset_folder</code>字段的值为<code>true</code>实现的，可以将与<code>filename.md</code>文件相关的所有内容都放在此文件夹中，本文会在<code>Asset资源文件夹</code>中有介绍)</li>
+<li>hexo解析器根据<code>站点配置文件</code>和<code>主题配置文件</code>将根目录下的<code>source/</code>和主题目录下的<code>source/</code>所有文件解析成静态站点文件保存到根目录下解析器新建的<code>public</code>目录中。解析机制是：将<code>.md</code>文件和<code>.html</code>文件根据对应的<a href="">Markdown</a>语法和<a href="">html</a>语法解析成对应的<code>.html</code>文件。其他文件直接复制到对应目录下。此时可以通过本地浏览器预览静态站点，本质就是访问<code>public</code>文件夹。</li>
+<li>hexo部署器先直接复制一份<code>public/</code>目录下所有文件内容到部署器新建的<code>.deploy_git/</code>下；然后将该目录下的所有文件<code>push</code>到远程托管仓库，达到部署静态站点到<code>Internet</code>上去。</li>
+</ol>
+<ul>
 <li><a id="more"></a>
 </li>
 </ul>
@@ -1421,6 +1473,11 @@ permalink: :lang/:title/
     <div>
       
         
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/wechat-qcode.jpg" alt="(匿名者)Anony Golden wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
 
       
     </div>
@@ -1456,6 +1513,21 @@ permalink: :lang/:title/
     <div>
       
         
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      (匿名者)Anony Golden
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://yoursite.com/2017/03/21/Hexo详解/" title="静态站点生成框架之Hexo详解">http://yoursite.com/2017/03/21/Hexo详解/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
 
       
     </div>
@@ -1561,7 +1633,7 @@ permalink: :lang/:title/
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1572,7 +1644,7 @@ permalink: :lang/:title/
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>

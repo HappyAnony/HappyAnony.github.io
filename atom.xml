@@ -22,7 +22,10 @@
     <published>2017-03-24T03:26:00.000Z</published>
     <updated>2017-03-24T03:26:00.000Z</updated>
     
-    <content type="html"><![CDATA[<ul>
+    <content type="html"><![CDATA[<blockquote>
+<p><strong>本路线图持续跟新中……………</strong></p>
+</blockquote>
+<ul>
 <li><a id="more"></a>
 </li>
 </ul>
@@ -31,14 +34,21 @@
     
     <summary type="html">
     
-      &lt;ul&gt;
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;本路线图持续跟新中……………&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
 &lt;li&gt;
     
     </summary>
     
-      <category term="自建博客" scheme="http://yoursite.com/categories/%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+      <category term="1-Coder社区(RedArmy)" scheme="http://yoursite.com/categories/1-Coder%E7%A4%BE%E5%8C%BA-RedArmy/"/>
     
-      <category term="1.路线图" scheme="http://yoursite.com/categories/%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/1-%E8%B7%AF%E7%BA%BF%E5%9B%BE/"/>
+      <category term="2-虚实奇正" scheme="http://yoursite.com/categories/1-Coder%E7%A4%BE%E5%8C%BA-RedArmy/2-%E8%99%9A%E5%AE%9E%E5%A5%87%E6%AD%A3/"/>
+    
+      <category term="1-自建博客" scheme="http://yoursite.com/categories/1-Coder%E7%A4%BE%E5%8C%BA-RedArmy/2-%E8%99%9A%E5%AE%9E%E5%A5%87%E6%AD%A3/1-%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="1-路线图" scheme="http://yoursite.com/categories/1-Coder%E7%A4%BE%E5%8C%BA-RedArmy/2-%E8%99%9A%E5%AE%9E%E5%A5%87%E6%AD%A3/1-%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/1-%E8%B7%AF%E7%BA%BF%E5%9B%BE/"/>
     
     
       <category term="自建博客" scheme="http://yoursite.com/tags/%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
@@ -291,14 +301,31 @@ $git pull
 <p>另外，每一项都有一个额外的 <code>external</code>属性，此属性用来控制是否使用外链字体库。 开放此属性方便你设定那些已经安装在系统中的字体，减少不必要的请求（请求大小）</p>
 </blockquote>
 <p><img src="30.png" alt=""></p>
-<h3 id="设置代码高亮主题"><a href="#设置代码高亮主题" class="headerlink" title="设置代码高亮主题"></a>设置代码高亮主题</h3><blockquote>
+<h3 id="设置代码高亮主题"><a href="#设置代码高亮主题" class="headerlink" title="设置代码高亮主题"></a>设置代码高亮主题</h3><h4 id="启用语法高亮"><a href="#启用语法高亮" class="headerlink" title="启用语法高亮"></a>启用语法高亮</h4><h5 id="hexo默认-hightlight-js"><a href="#hexo默认-hightlight-js" class="headerlink" title="hexo默认[hightlight.js]"></a>hexo默认[hightlight.js]</h5><blockquote>
+<p>hexo已实现代码高亮，代码封装在<code>hexo-util</code>插件中，使用的是<a href="https://highlightjs.org/" target="_blank" rel="external">hightlight.js</a>，先编辑<code>站点配置文件</code>,修改<code>highlight</code>字段，<code>enable</code>项的值设为<code>true</code></p>
+</blockquote>
+<p><img src="44.png" alt=""></p>
+<blockquote>
+<p>然后通过<code>include_code</code>tag插件双标签来引用代码块，功能已经很强大了，而且自带行号显示。</p>
+</blockquote>
+<h5 id="NexT使用-Tomorrow-Theme"><a href="#NexT使用-Tomorrow-Theme" class="headerlink" title="NexT使用[Tomorrow Theme]"></a>NexT使用[Tomorrow Theme]</h5><blockquote>
 <p>NexT使用 <a href="https://github.com/chriskempson/tomorrow-theme" target="_blank" rel="external">Tomorrow Theme</a> 作为代码高亮，共有5款主题供你选择。NexT默认使用的是白色的<code>normal</code>主题，可选的值有 <code>normal，night</code>， <code>night blue</code>， <code>night bright</code>， <code>night eighties</code>：</p>
 </blockquote>
 <p><img src="31.png" alt=""></p>
 <blockquote>
-<p>编辑<code>主题配置文件</code>，更改<code>highlight_theme</code>字段的值，如：</p>
+<p>直接编辑<code>主题配置文件</code>，更改<code>highlight_theme</code>字段的值，如：</p>
 </blockquote>
 <p><img src="32.png" alt=""></p>
+<h4 id="代码引用格式"><a href="#代码引用格式" class="headerlink" title="代码引用格式"></a>代码引用格式</h4><h5 id="格式一"><a href="#格式一" class="headerlink" title="格式一"></a>格式一</h5><p><img src="43.png" alt=""></p>
+<blockquote>
+<p>例如：</p>
+</blockquote>
+<p><img src="41.png" alt=""></p>
+<blockquote>
+<p>常用语言对照表如下：</p>
+</blockquote>
+<p><img src="42.png" alt=""></p>
+<h5 id="格式二"><a href="#格式二" class="headerlink" title="格式二"></a>格式二</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% codeblock [lang:language] [title] [url] [link text] %&#125;</div><div class="line">code snippet</div><div class="line">&#123;% endcodeblock %&#125;</div></pre></td></tr></table></figure>
 <h3 id="侧边栏社交链接"><a href="#侧边栏社交链接" class="headerlink" title="侧边栏社交链接"></a>侧边栏社交链接</h3><blockquote>
 <p>侧栏社交链接的修改包含两个部分，第一是<code>链接</code>，第二是<code>链接图标</code>。两者配置均在<code>主题配置文件</code>中</p>
 </blockquote>
@@ -316,19 +343,43 @@ $git pull
 <p><strong>编辑<code>主题配置文件</code>,添加如下内容：</strong></p>
 <p><img src="39.png" alt=""></p>
 <blockquote>
-<p>图片放在<code>theme/next/souce/images/</code>下</p>
+<p>图片放在<code>theme/next/souce/images/</code>下。效果如下：</p>
 </blockquote>
+<p><img src="45.png" alt=""></p>
 <h3 id="设置友情链接"><a href="#设置友情链接" class="headerlink" title="设置友情链接"></a>设置友情链接</h3><blockquote>
 <p>可参考<a href="https://github.com/iissnan/hexo-theme-next/pull/250" target="_blank" rel="external">iamwent </a>进行配置</p>
 </blockquote>
 <p><strong>编辑<code>主题配置文件</code>,添加如下内容：</strong></p>
 <p><img src="38.png" alt=""></p>
 <h3 id="多说评论显示UA"><a href="#多说评论显示UA" class="headerlink" title="多说评论显示UA"></a>多说评论显示UA</h3><blockquote>
-<p>可参考<a href="https://github.com/iissnan/hexo-theme-next/pull/286" target="_blank" rel="external">Doublemine</a>进行配置</p>
-<p>编辑<code>主题配置文件</code>，修改<code>duoshuo_info</code>字段；设置<code>ua_enable</code>为<code>true</code>即可显示 <code>UA</code>信息。<code>admin_enable</code>是用于显示 <code>「博主」</code> 文字，表明评论者是博主,此字段需要同时配置 <code>user_id</code> 和 <code>admin_nickname</code> 字段。请访问<a href="http://dev.duoshuo.com/" target="_blank" rel="external">多说</a>，登录并访问「我的主页」获取<code>user_id</code>，此<code>ID</code>是网址最后那串数字。设置如下:</p>
+<p>Hexo创建的网站是静态的，也就是说，所有内容都是事先生成好的。这样就导致没法在网站上使用动态功能，比如<code>登录</code>、<code>评论</code>等;之前可以通过一些第三方的插件（<code>多说</code>）来曲线救国，实现这些动态功能。但是<code>多说</code>即将关闭:<code>因公司业务调整，非常遗憾的向大家宣布多说项目即将关闭。 我们将于2017年6月1日正式关停服务，在此之前您可以通过后台的数据导出功能导出自己站点的评论数据。 对此给您造成的不便，我们深表歉意，感谢您的一路相伴</code></p>
 </blockquote>
-<p><img src="40.png" alt=""></p>
-<h3 id="腾讯公益404页面"><a href="#腾讯公益404页面" class="headerlink" title="腾讯公益404页面"></a>腾讯公益404页面</h3><h3 id="站点建立时间"><a href="#站点建立时间" class="headerlink" title="站点建立时间"></a>站点建立时间</h3><h3 id="订阅微信公众号"><a href="#订阅微信公众号" class="headerlink" title="订阅微信公众号"></a>订阅微信公众号</h3><h3 id="设置动画效果"><a href="#设置动画效果" class="headerlink" title="设置动画效果"></a>设置动画效果</h3><h2 id="第三方服务"><a href="#第三方服务" class="headerlink" title="第三方服务"></a>第三方服务</h2><h3 id="评论系统"><a href="#评论系统" class="headerlink" title="评论系统"></a>评论系统</h3><h4 id="多说"><a href="#多说" class="headerlink" title="多说"></a>多说</h4><h4 id="Disqus"><a href="#Disqus" class="headerlink" title="Disqus"></a>Disqus</h4><h4 id="Facebook-Comments"><a href="#Facebook-Comments" class="headerlink" title="Facebook Comments"></a>Facebook Comments</h4><h4 id="HyperComments"><a href="#HyperComments" class="headerlink" title="HyperComments"></a>HyperComments</h4><h4 id="网易云跟帖"><a href="#网易云跟帖" class="headerlink" title="网易云跟帖"></a>网易云跟帖</h4><h4 id="来必力"><a href="#来必力" class="headerlink" title="来必力"></a>来必力</h4><h3 id="数据统计与分析"><a href="#数据统计与分析" class="headerlink" title="数据统计与分析"></a>数据统计与分析</h3><h4 id="百度统计"><a href="#百度统计" class="headerlink" title="百度统计"></a>百度统计</h4><h4 id="Google分析"><a href="#Google分析" class="headerlink" title="Google分析"></a>Google分析</h4><h4 id="腾讯分析"><a href="#腾讯分析" class="headerlink" title="腾讯分析"></a>腾讯分析</h4><h4 id="CNZZ统计"><a href="#CNZZ统计" class="headerlink" title="CNZZ统计"></a>CNZZ统计</h4><h4 id="不蒜子统计"><a href="#不蒜子统计" class="headerlink" title="不蒜子统计"></a>不蒜子统计</h4><h4 id="腾讯移动分析"><a href="#腾讯移动分析" class="headerlink" title="腾讯移动分析"></a>腾讯移动分析</h4><h3 id="内容分享服务"><a href="#内容分享服务" class="headerlink" title="内容分享服务"></a>内容分享服务</h3><h4 id="JiaThis"><a href="#JiaThis" class="headerlink" title="JiaThis"></a>JiaThis</h4><h4 id="百度分享"><a href="#百度分享" class="headerlink" title="百度分享"></a>百度分享</h4><h4 id="多说分享"><a href="#多说分享" class="headerlink" title="多说分享"></a>多说分享</h4><h4 id="AddThis"><a href="#AddThis" class="headerlink" title="AddThis"></a>AddThis</h4><h3 id="搜索服务"><a href="#搜索服务" class="headerlink" title="搜索服务"></a>搜索服务</h3><h4 id="Swiftype"><a href="#Swiftype" class="headerlink" title="Swiftype"></a>Swiftype</h4><h4 id="微搜索"><a href="#微搜索" class="headerlink" title="微搜索"></a>微搜索</h4><h4 id="Local-Search"><a href="#Local-Search" class="headerlink" title="Local Search"></a>Local Search</h4><blockquote>
+<h3 id="腾讯公益404页面"><a href="#腾讯公益404页面" class="headerlink" title="腾讯公益404页面"></a>腾讯公益404页面</h3><blockquote>
+<p>由<a href="https://github.com/iissnan/hexo-theme-next/pull/126" target="_blank" rel="external">xirong</a>提供,具体实现步骤如下所示：</p>
+</blockquote>
+<p><strong>1.使用<code>hexo new page</code>命令生成一个<code>page</code>文件
+</strong><br><img src="46.png" alt=""></p>
+<p><strong>2.编辑该<code>.md</code>page文件，将<code>title</code>值改为<code>公益</code>（站点menu菜单显示文本），<code>type</code>值该为<code>commonweal</code>,最后将下面<code>html</code>代码粘贴上去保存。    </strong>                                                </p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE HTML&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"content-type"</span> <span class="attr">content</span>=<span class="string">"text/html;charset=utf-8;"</span>/&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"X-UA-Compatible"</span> <span class="attr">content</span>=<span class="string">"IE=edge,chrome=1"</span> /&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"robots"</span> <span class="attr">content</span>=<span class="string">"all"</span> /&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"robots"</span> <span class="attr">content</span>=<span class="string">"index,follow"</span>/&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">type</span>=<span class="string">"text/css"</span> <span class="attr">href</span>=<span class="string">"https://qzone.qq.com/gy/404/style/404style.css"</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/plain"</span> <span class="attr">src</span>=<span class="string">"http://www.qq.com/404/search_children.js"</span></span></div><div class="line">          <span class="attr">charset</span>=<span class="string">"utf-8"</span> <span class="attr">homePageUrl</span>=<span class="string">"/"</span></div><div class="line">          <span class="attr">homePageName</span>=<span class="string">"回到我的主页"</span>&gt;<span class="undefined"></span></div><div class="line">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://qzone.qq.com/gy/404/data.js"</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://qzone.qq.com/gy/404/page.js"</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<p><img src="47.png" alt=""></p>
+<p><strong>3.编辑<code>主题配置文件</code>，在<code>menu</code>字段添加以下参数<code>commonweal: /commonweal/index.html</code>；在<code>menu_icons</code>字段添加以下参数<code>commonweal: heartbeat</code></strong></p>
+<p><strong>4.依次执行<code>hexo g</code>命令和<code>hexo s</code>命令，后，用浏览器预览</strong></p>
+<p><img src="48.png" alt=""></p>
+<h3 id="站点建立时间"><a href="#站点建立时间" class="headerlink" title="站点建立时间"></a>站点建立时间</h3><blockquote>
+<p>这个时间将在站点的底部显示，例如<code>© 2013 - 2015</code>。 编辑<code>主题配置文件</code>，新增字段<code>since</code>,如下：</p>
+</blockquote>
+<h3 id="订阅微信公众号"><a href="#订阅微信公众号" class="headerlink" title="订阅微信公众号"></a>订阅微信公众号</h3><blockquote>
+<p>此特性在版本<code>5.0.1</code>中引入，要使用此功能请确保所使用的 NexT 版本在此之后.</p>
+</blockquote>
+<p><strong>1.在微信公众号平台下载您的二维码，并将它存放于<code>主题目录</code>下的<code>source/images/</code>目录下。</strong><br><strong>2.编辑<code>主题配置文件</code>,修改<code>wechat_subsriber</code>字段内容如下：</strong></p>
+<p><img src="49.png" alt=""></p>
+<p><strong>3.依次执行<code>hexo g</code>和<code>hexo s</code>命令，效果如下：</strong></p>
+<p><img src="50.png" alt=""></p>
+<h3 id="设置动画效果"><a href="#设置动画效果" class="headerlink" title="设置动画效果"></a>设置动画效果</h3><blockquote>
+<p>NexT默认开启动画效果，效果使用<code>JavaScript</code> 编写，因此需要等待 <code>JavaScript</code>脚本完全加载完毕后才会显示内容。 如果您比较在乎速度，可以将设置此字段的值为<code>false</code>来关闭动画。</p>
+<p>编辑 <code>主题配置文件</code>， 搜索 <code>use_motion</code>，根据您的需求设置值为<code>true</code>或者 <code>false</code> 即可</p>
+</blockquote>
+<h2 id="第三方服务"><a href="#第三方服务" class="headerlink" title="第三方服务"></a>第三方服务</h2><h3 id="评论系统"><a href="#评论系统" class="headerlink" title="评论系统"></a>评论系统</h3><h4 id="多说"><a href="#多说" class="headerlink" title="多说"></a>多说</h4><h4 id="Disqus"><a href="#Disqus" class="headerlink" title="Disqus"></a>Disqus</h4><h4 id="Facebook-Comments"><a href="#Facebook-Comments" class="headerlink" title="Facebook Comments"></a>Facebook Comments</h4><h4 id="HyperComments"><a href="#HyperComments" class="headerlink" title="HyperComments"></a>HyperComments</h4><h4 id="网易云跟帖"><a href="#网易云跟帖" class="headerlink" title="网易云跟帖"></a>网易云跟帖</h4><h4 id="来必力"><a href="#来必力" class="headerlink" title="来必力"></a>来必力</h4><h3 id="数据统计与分析"><a href="#数据统计与分析" class="headerlink" title="数据统计与分析"></a>数据统计与分析</h3><h4 id="百度统计"><a href="#百度统计" class="headerlink" title="百度统计"></a>百度统计</h4><h4 id="Google分析"><a href="#Google分析" class="headerlink" title="Google分析"></a>Google分析</h4><h4 id="腾讯分析"><a href="#腾讯分析" class="headerlink" title="腾讯分析"></a>腾讯分析</h4><h4 id="CNZZ统计"><a href="#CNZZ统计" class="headerlink" title="CNZZ统计"></a>CNZZ统计</h4><h4 id="不蒜子统计"><a href="#不蒜子统计" class="headerlink" title="不蒜子统计"></a>不蒜子统计</h4><h4 id="腾讯移动分析"><a href="#腾讯移动分析" class="headerlink" title="腾讯移动分析"></a>腾讯移动分析</h4><h3 id="内容分享服务"><a href="#内容分享服务" class="headerlink" title="内容分享服务"></a>内容分享服务</h3><h4 id="JiaThis"><a href="#JiaThis" class="headerlink" title="JiaThis"></a>JiaThis</h4><h4 id="百度分享"><a href="#百度分享" class="headerlink" title="百度分享"></a>百度分享</h4><h4 id="多说分享"><a href="#多说分享" class="headerlink" title="多说分享"></a>多说分享</h4><h4 id="AddThis"><a href="#AddThis" class="headerlink" title="AddThis"></a>AddThis</h4><h3 id="搜索服务"><a href="#搜索服务" class="headerlink" title="搜索服务"></a>搜索服务</h3><h4 id="Swiftype"><a href="#Swiftype" class="headerlink" title="Swiftype"></a>Swiftype</h4><h4 id="微搜索"><a href="#微搜索" class="headerlink" title="微搜索"></a>微搜索</h4><h4 id="Local-Search"><a href="#Local-Search" class="headerlink" title="Local Search"></a>Local Search</h4><blockquote>
 <p>添加<code>百度/谷歌/本地</code> 自定义站点内容搜索</p>
 </blockquote>
 <h5 id="安装插件-1"><a href="#安装插件-1" class="headerlink" title="安装插件"></a>安装插件</h5><blockquote>
@@ -355,11 +406,15 @@ $git pull
     
     </summary>
     
-      <category term="自建博客" scheme="http://yoursite.com/categories/%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+      <category term="1-Coder社区(RedArmy)" scheme="http://yoursite.com/categories/1-Coder%E7%A4%BE%E5%8C%BA-RedArmy/"/>
     
-      <category term="2.静态" scheme="http://yoursite.com/categories/%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/2-%E9%9D%99%E6%80%81/"/>
+      <category term="2-虚实奇正" scheme="http://yoursite.com/categories/1-Coder%E7%A4%BE%E5%8C%BA-RedArmy/2-%E8%99%9A%E5%AE%9E%E5%A5%87%E6%AD%A3/"/>
     
-      <category term="3.主题优化" scheme="http://yoursite.com/categories/%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/2-%E9%9D%99%E6%80%81/3-%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/"/>
+      <category term="1-自建博客" scheme="http://yoursite.com/categories/1-Coder%E7%A4%BE%E5%8C%BA-RedArmy/2-%E8%99%9A%E5%AE%9E%E5%A5%87%E6%AD%A3/1-%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="2-静态" scheme="http://yoursite.com/categories/1-Coder%E7%A4%BE%E5%8C%BA-RedArmy/2-%E8%99%9A%E5%AE%9E%E5%A5%87%E6%AD%A3/1-%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/2-%E9%9D%99%E6%80%81/"/>
+    
+      <category term="3-主题优化" scheme="http://yoursite.com/categories/1-Coder%E7%A4%BE%E5%8C%BA-RedArmy/2-%E8%99%9A%E5%AE%9E%E5%A5%87%E6%AD%A3/1-%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/2-%E9%9D%99%E6%80%81/3-%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/"/>
     
     
       <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
@@ -375,7 +430,15 @@ $git pull
     <published>2017-03-21T13:02:56.000Z</published>
     <updated>2017-03-24T04:27:56.000Z</updated>
     
-    <content type="html"><![CDATA[<ul>
+    <content type="html"><![CDATA[<blockquote>
+<p><strong>Hexo=hexo生成器(hexo n)+hexo解析器(hexo g)+hexo部署器(hexo d)。它的工作机制是：</strong></p>
+</blockquote>
+<ol>
+<li>hexo生成器根据<code>scaffolds</code>目录下的<code>draft.md</code>、<code>page.md</code>、<code>post.md</code>模板文件分别在<code>source/_draft/</code>、<code>source/</code>、<code>source/_post</code>目录下生成对应的<code>filename.md</code>文件和以<code>filename</code>命名的文件夹(该文件夹是通过编辑<code>站点配置文件</code>中的<code>post_asset_folder</code>字段的值为<code>true</code>实现的，可以将与<code>filename.md</code>文件相关的所有内容都放在此文件夹中，本文会在<code>Asset资源文件夹</code>中有介绍)</li>
+<li>hexo解析器根据<code>站点配置文件</code>和<code>主题配置文件</code>将根目录下的<code>source/</code>和主题目录下的<code>source/</code>所有文件解析成静态站点文件保存到根目录下解析器新建的<code>public</code>目录中。解析机制是：将<code>.md</code>文件和<code>.html</code>文件根据对应的<a href="">Markdown</a>语法和<a href="">html</a>语法解析成对应的<code>.html</code>文件。其他文件直接复制到对应目录下。此时可以通过本地浏览器预览静态站点，本质就是访问<code>public</code>文件夹。</li>
+<li>hexo部署器先直接复制一份<code>public/</code>目录下所有文件内容到部署器新建的<code>.deploy_git/</code>下；然后将该目录下的所有文件<code>push</code>到远程托管仓库，达到部署静态站点到<code>Internet</code>上去。</li>
+</ol>
+<ul>
 <li><a id="more"></a>
 </li>
 </ul>
@@ -1315,16 +1378,28 @@ permalink: :lang/:title/
     
     <summary type="html">
     
-      &lt;ul&gt;
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hexo=hexo生成器(hexo n)+hexo解析器(hexo g)+hexo部署器(hexo d)。它的工作机制是：&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;hexo生成器根据&lt;code&gt;scaffolds&lt;/code&gt;目录下的&lt;code&gt;draft.md&lt;/code&gt;、&lt;code&gt;page.md&lt;/code&gt;、&lt;code&gt;post.md&lt;/code&gt;模板文件分别在&lt;code&gt;source/_draft/&lt;/code&gt;、&lt;code&gt;source/&lt;/code&gt;、&lt;code&gt;source/_post&lt;/code&gt;目录下生成对应的&lt;code&gt;filename.md&lt;/code&gt;文件和以&lt;code&gt;filename&lt;/code&gt;命名的文件夹(该文件夹是通过编辑&lt;code&gt;站点配置文件&lt;/code&gt;中的&lt;code&gt;post_asset_folder&lt;/code&gt;字段的值为&lt;code&gt;true&lt;/code&gt;实现的，可以将与&lt;code&gt;filename.md&lt;/code&gt;文件相关的所有内容都放在此文件夹中，本文会在&lt;code&gt;Asset资源文件夹&lt;/code&gt;中有介绍)&lt;/li&gt;
+&lt;li&gt;hexo解析器根据&lt;code&gt;站点配置文件&lt;/code&gt;和&lt;code&gt;主题配置文件&lt;/code&gt;将根目录下的&lt;code&gt;source/&lt;/code&gt;和主题目录下的&lt;code&gt;source/&lt;/code&gt;所有文件解析成静态站点文件保存到根目录下解析器新建的&lt;code&gt;public&lt;/code&gt;目录中。解析机制是：将&lt;code&gt;.md&lt;/code&gt;文件和&lt;code&gt;.html&lt;/code&gt;文件根据对应的&lt;a href=&quot;&quot;&gt;Markdown&lt;/a&gt;语法和&lt;a href=&quot;&quot;&gt;html&lt;/a&gt;语法解析成对应的&lt;code&gt;.html&lt;/code&gt;文件。其他文件直接复制到对应目录下。此时可以通过本地浏览器预览静态站点，本质就是访问&lt;code&gt;public&lt;/code&gt;文件夹。&lt;/li&gt;
+&lt;li&gt;hexo部署器先直接复制一份&lt;code&gt;public/&lt;/code&gt;目录下所有文件内容到部署器新建的&lt;code&gt;.deploy_git/&lt;/code&gt;下；然后将该目录下的所有文件&lt;code&gt;push&lt;/code&gt;到远程托管仓库，达到部署静态站点到&lt;code&gt;Internet&lt;/code&gt;上去。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
 &lt;li&gt;
     
     </summary>
     
-      <category term="自建博客" scheme="http://yoursite.com/categories/%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+      <category term="1-Coder社区(RedArmy)" scheme="http://yoursite.com/categories/1-Coder%E7%A4%BE%E5%8C%BA-RedArmy/"/>
     
-      <category term="2.静态" scheme="http://yoursite.com/categories/%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/2-%E9%9D%99%E6%80%81/"/>
+      <category term="2-虚实奇正" scheme="http://yoursite.com/categories/1-Coder%E7%A4%BE%E5%8C%BA-RedArmy/2-%E8%99%9A%E5%AE%9E%E5%A5%87%E6%AD%A3/"/>
     
-      <category term="1.环境准备" scheme="http://yoursite.com/categories/%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/2-%E9%9D%99%E6%80%81/1-%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/"/>
+      <category term="1-自建博客" scheme="http://yoursite.com/categories/1-Coder%E7%A4%BE%E5%8C%BA-RedArmy/2-%E8%99%9A%E5%AE%9E%E5%A5%87%E6%AD%A3/1-%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="2-静态" scheme="http://yoursite.com/categories/1-Coder%E7%A4%BE%E5%8C%BA-RedArmy/2-%E8%99%9A%E5%AE%9E%E5%A5%87%E6%AD%A3/1-%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/2-%E9%9D%99%E6%80%81/"/>
+    
+      <category term="1-环境准备" scheme="http://yoursite.com/categories/1-Coder%E7%A4%BE%E5%8C%BA-RedArmy/2-%E8%99%9A%E5%AE%9E%E5%A5%87%E6%AD%A3/1-%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/2-%E9%9D%99%E6%80%81/1-%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/"/>
     
     
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
@@ -1338,7 +1413,10 @@ permalink: :lang/:title/
     <published>2017-03-21T12:19:42.000Z</published>
     <updated>2017-03-21T12:19:42.000Z</updated>
     
-    <content type="html"><![CDATA[<ul>
+    <content type="html"><![CDATA[<blockquote>
+<p><strong>本教程适用于<code>Windows</code>平台</strong></p>
+</blockquote>
+<ul>
 <li><a id="more"></a>
 </li>
 </ul>
@@ -1612,16 +1690,23 @@ $git pull
     
     <summary type="html">
     
-      &lt;ul&gt;
+      &lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;本教程适用于&lt;code&gt;Windows&lt;/code&gt;平台&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
 &lt;li&gt;
     
     </summary>
     
-      <category term="自建博客" scheme="http://yoursite.com/categories/%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+      <category term="1-Coder社区(RedArmy)" scheme="http://yoursite.com/categories/1-Coder%E7%A4%BE%E5%8C%BA-RedArmy/"/>
     
-      <category term="2.静态" scheme="http://yoursite.com/categories/%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/2-%E9%9D%99%E6%80%81/"/>
+      <category term="2-虚实奇正" scheme="http://yoursite.com/categories/1-Coder%E7%A4%BE%E5%8C%BA-RedArmy/2-%E8%99%9A%E5%AE%9E%E5%A5%87%E6%AD%A3/"/>
     
-      <category term="2.基本搭建" scheme="http://yoursite.com/categories/%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/2-%E9%9D%99%E6%80%81/2-%E5%9F%BA%E6%9C%AC%E6%90%AD%E5%BB%BA/"/>
+      <category term="1-自建博客" scheme="http://yoursite.com/categories/1-Coder%E7%A4%BE%E5%8C%BA-RedArmy/2-%E8%99%9A%E5%AE%9E%E5%A5%87%E6%AD%A3/1-%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="2-静态" scheme="http://yoursite.com/categories/1-Coder%E7%A4%BE%E5%8C%BA-RedArmy/2-%E8%99%9A%E5%AE%9E%E5%A5%87%E6%AD%A3/1-%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/2-%E9%9D%99%E6%80%81/"/>
+    
+      <category term="2-基本搭建" scheme="http://yoursite.com/categories/1-Coder%E7%A4%BE%E5%8C%BA-RedArmy/2-%E8%99%9A%E5%AE%9E%E5%A5%87%E6%AD%A3/1-%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/2-%E9%9D%99%E6%80%81/2-%E5%9F%BA%E6%9C%AC%E6%90%AD%E5%BB%BA/"/>
     
     
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
@@ -1629,38 +1714,6 @@ $git pull
       <category term="github" scheme="http://yoursite.com/tags/github/"/>
     
       <category term="自建博客" scheme="http://yoursite.com/tags/%E8%87%AA%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2017/03/21/hello-world/"/>
-    <id>http://yoursite.com/2017/03/21/hello-world/</id>
-    <published>2017-03-21T03:32:57.012Z</published>
-    <updated>2017-03-23T10:16:22.746Z</updated>
-    
-    <content type="html"><![CDATA[<ul>
-<li><a id="more"></a>
-</li>
-</ul>
-<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;
-    
-    </summary>
-    
     
   </entry>
   
